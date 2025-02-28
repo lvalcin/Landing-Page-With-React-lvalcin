@@ -8,9 +8,8 @@ import Card from "./Card";
 
 //create your first component
 const cardTitle=["Carribean/Latin America", "Africa", "Asia/Middle East", "Europe"]
-const cardText = "This is an example text.";
-const buttonText = "Click Me"; 
-const buttonLink = "#";
+
+
 
 const Home = () => {
 	return (

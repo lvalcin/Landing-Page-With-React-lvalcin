@@ -7,9 +7,9 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Card = ({propTitle}) => {
 	return (
    <div className= "text-center">
-        this is my card
+    
 
-    <div className="card" style= {{ width: "18rem" }}>
+    <div className="card rounded-1 d-flex" style= {{ width: "16rem" }}>
       <div className="card-body">
         <h5 className="card-title">{propTitle}</h5>
         <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
