@@ -7,14 +7,26 @@ import Title from "./Title";
 import Card from "./Card";
 
 //create your first component
-const cardTitle=["Title 1", "Title 2", "Title 3", "Title 4"]
+const cardTitle=["Carribean/Latin America", "Africa", "Asia/Middle East", "Europe"]
+const cardText = "This is an example text.";
+const buttonText = "Click Me"; 
+const buttonLink = "#";
 
 const Home = () => {
 	return (
 		<div className="text-center">
             <Navbar />
 			<Title />
-			<Card />
+			{cardTitle.map(
+				(item)=>{
+					return(
+						<div>
+							<Card propTitle={item} />
+						</div>
+					)	
+				}
+			)}
+
 
 		</div>
 	);
