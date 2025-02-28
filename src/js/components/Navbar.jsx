@@ -7,7 +7,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Navbar = () => {
     return (
         <div className="text-center">
-            <ul class="nav justify-content-end">
+            <ul class="nav justify-content-end bg-danger-subtle mb-4">
   <li class="nav-item">
     <a class="nav-link" href="#">Home</a>
   </li>
