@@ -7,6 +7,8 @@ import Title from "./Title";
 import Card from "./Card";
 
 //create your first component
+const cardTitle=["Title 1", "Title 2", "Title 3", "Title 4"]
+
 const Home = () => {
 	return (
 		<div className="text-center">
