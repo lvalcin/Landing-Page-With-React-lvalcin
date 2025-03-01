@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -35,15 +36,19 @@ const Home = () => {
 		<div className="text-center">
             <Navbar />
 			<Title />
+			<div className="container-fluid">
+				<div className = "row"> 
 			{cardObj.map(
 				(item)=>{
 					return(
-						<div>
-							<Card cardProp ={item} />
-						</div>
+							<div className="col-md-3 col-sm-6 col-12 mb-2">
+								<Card cardProp ={item} />
+							</div>
 					)	
 				}
 			)}
+			</div>
+			</div>
 
 
 		</div>
