@@ -6,6 +6,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import Navbar from "./Navbar";
 import Title from "./Title";
 import Card from "./Card";
+import Footer from "./Footer"
 
 //create your first component
 
@@ -36,19 +37,22 @@ const Home = () => {
 		<div className="text-center">
             <Navbar />
 			<Title />
-			<div className="container-fluid">
+
+				<div className="container-fluid">
 				<div className = "row"> 
-			{cardObj.map(
-				(item)=>{
-					return(
-							<div className="col-md-3 col-sm-6 col-12 mb-2">
+					{cardObj.map(
+						(item)=>{
+							return(
+								<div className="col-md-3 col-sm-6 col-12 mb-2">
 								<Card cardProp ={item} />
-							</div>
-					)	
-				}
-			)}
-			</div>
-			</div>
+								</div>
+									)	
+									}
+								)}
+				</div>
+				</div>
+			
+			<Footer />
 
 
 		</div>
