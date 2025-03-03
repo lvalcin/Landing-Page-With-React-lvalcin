@@ -8,20 +8,16 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Card = ({cardProp}) => {
   
 	return (
-   <div className= "container">
-    
+   <div className= "container">   
     <div className="card rounded-1" style={{ width: "18rem"}}>
       <div className="card-body">
         <img src={cardProp.img} class="card-img-top img-fluid" style={{ width: "100%", height: "200px", objectFit: "cover" }} 
          alt="..."/>
         <h5 className="card-title">{cardProp.title}</h5>
-        <h6 className="card-subtitle mb-2 text-body-secondary">cardProp.paragrph</h6>
-        <p className="card-text">cardProp.paragrph</p>
+        <p className="card-text">{cardProp.paragraph}</p>
         <button type="button" class="btn btn-primary">Explore Packages</button>
       </div>
       </div>
-    
-
     </div>
   );
 };

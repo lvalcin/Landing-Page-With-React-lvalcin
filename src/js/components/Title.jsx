@@ -12,7 +12,6 @@ const Title = () => {
 				We will take care of the rest. Let's create your next escape!
 			</p>
 			<button type="button" class="btn btn-primary">Let's Get Started</button>
-
 		</div>
 	);
 };
